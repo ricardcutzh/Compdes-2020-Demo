@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+    build:
+      commands:
+        - echo "building image for testing"
+        - docker-compose build
+
+    post_build:
+      commands:
+        - echo "testing application"
+        - docker-compose run test
+        - echo "finish testing"

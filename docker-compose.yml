@@ -11,3 +11,11 @@ services:
     volumes:
       - ./:/home
     command: bash -c 'python application.py'
+
+  test:
+    build: ./
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT}
+    volumes:
+      - ./:/home
+    command: bash -c 'python -m pytest'
