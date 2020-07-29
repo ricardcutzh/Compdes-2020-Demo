@@ -11,3 +11,8 @@ phases:
         - echo "testing application"
         - docker-compose run test
         - echo "finish testing"
+
+artifacts:
+  files:
+    - '**/*'
+  name: application
