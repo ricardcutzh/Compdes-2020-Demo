@@ -5,6 +5,6 @@ files:
     destination: /home
 hooks:
   ApplicationStart:
-    - location: deploy.sh
+    - location: /home/deploy.sh
       timeout: 300
       runas: root
