@@ -1,3 +1,4 @@
-docker-compose build
+#!/bin/bash
+docker-compose -f /home/docker-compose.yml build
 
-docker-compose up -d
+docker-compose -f /home/docker-compose.yml up -d
